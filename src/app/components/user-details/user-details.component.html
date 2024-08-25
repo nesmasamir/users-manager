@@ -1,0 +1,14 @@
+
+<div class="btn-container">
+    <button class="btn main-btn" (click)="back()">back</button>
+</div>
+
+<div class="user-container">
+
+    <div  class="user-card">
+        
+        <img [src]='user?.avatar'>
+        <div class="name">{{user?.first_name}} {{user?.last_name}}</div>
+        <div class="email">{{user?.email}}</div>
+    </div>
+</div>

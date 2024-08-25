@@ -1,0 +1,59 @@
+.row{
+  
+}
+
+
+.paginator-container {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 30px auto;
+    width: 25%;
+    & button {
+        display: inline-block;
+        // flex: 1 0 30px ;
+        background-color: rgb(175, 157, 253);
+        color: #ffffff;
+        padding: 10px 15px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: all 0.2s;
+
+        &:hover {
+            background-color: #8468ff;
+        }
+    }
+
+}
+
+.active {
+    background-color: #8468ff !important;
+
+}
+
+.inActive {
+    color: #b4b4b4 !important;
+    background-color: #e6e5e5 !important;
+    cursor: auto !important;
+
+}
+
+.page-num{
+    display: block;
+}
+@media only screen and (max-width: 992px){
+    .paginator-container{
+       width: 35%;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .paginator-container{
+       width: 50%;
+
+    }
+
+    .page-num{
+        display: none !important;
+
+    }
+}

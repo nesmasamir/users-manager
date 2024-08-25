@@ -1,0 +1,19 @@
+.posts-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+    width: 90%;
+    margin: auto;
+    
+}
+
+.post {
+    margin: 20px 0;
+    flex: 1 0 300px;
+    // max-width: 350px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 15px 1px #bebebe;
+    padding: 10px;
+
+}

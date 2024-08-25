@@ -1,0 +1,39 @@
+.spinner-contaier {
+    // height: 100vh;
+    // display: flex;
+    // align-items: flex-start;
+
+}
+
+.spinner {
+
+    margin: 30px auto;
+    width: 40px;
+    height: 40px;
+
+    // background-color: red;
+    border: 2.5px solid #838383;
+    border-top: transparent;
+    border-left: transparent;
+    border-radius: 50%;
+    // transform: rotate(180deg);
+    animation-name: rotate-spinner;
+    animation-duration: 1S;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-timing-function: linear;
+
+}
+
+@keyframes rotate-spinner {
+    0% {
+        transform: rotate(0deg);
+        // background-color: green;
+    }
+
+
+    100% {
+        transform: rotate(360deg);
+        // background-color: red;
+    }
+}

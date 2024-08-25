@@ -1,0 +1,28 @@
+<div class="header-container">
+    <div class="row">
+
+        <div class="item search-container ">
+            <app-search-box (searchText)="getFilterText($event) "></app-search-box>
+            
+        </div>
+        
+        <div class="toggle-btn item"></div>
+    </div>
+</div>
+
+
+
+    
+    <div class="users-container">
+        <div class="user-container" *ngFor="let user of users|filter:serchText ">
+            <a routerLink="{{user.id}}">
+                
+                <app-user [userdata]="user"></app-user>
+            </a>
+        </div>
+        
+        
+    </div>
+
+<app-pagination (pageNum)="changePageIndex($event)" [totalPages]="totalPges"
+    [currentPage]="currentPage    "></app-pagination>
