@@ -1,6 +1,8 @@
+
 <script type="text/javascript">
-    // Redirect all 404s to the index.html
-    var path = window.location.pathname;
-    var origin = window.location.origin;
-    window.location.href = origin + '/users-manager/' + 'index.html';
+    // Get the current path (everything after the domain)
+    var currentPath = window.location.pathname;
+    
+    // Redirect to index.html with the original path as a query parameter
+    window.location.href = window.location.origin + '/ngrx-user-explorer/' + 'index.html?redirect=' + currentPath;
   </script>
