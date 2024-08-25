@@ -1,8 +1,20 @@
 
-<script type="text/javascript">
+<!-- <script type="text/javascript">
     // Get the current path (everything after the domain)
     var currentPath = window.location.pathname;
     
     // Redirect to index.html with the original path as a query parameter
     window.location.href = window.location.origin + '/users-manager/' + 'index.html?redirect=' + currentPath;
-  </script>
+  </script> -->
+
+  <!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="refresh" content="0; URL='./index.html'" />
+    <script type="text/javascript">
+      // Redirect the user to the index.html, preserving the path
+      window.location.href = window.location.origin + window.location.pathname.replace('/ngrx-user-explorer/', '') + window.location.search + window.location.hash;
+    </script>
+  </head>
+  <body></body>
+</html>
